@@ -1,0 +1,10 @@
+steps:
+  - label: windows-test
+    commands:
+      - "yarn install --frozen-lockfile --non-interactive --network-timeout 100000"
+      - "yarn bazel test //tools/ts-api-guardian:all --noshow_progress --workspace_status_command="
+    plugins:
+      - https://github.com/filipesilva/docker-buildkite-plugin.git#c2da988ca58dd558b4a206f81f3391bb5638b959:
+          image: "filipesilva/node-bazel-windows:0.0.2"
+    agents:
+      windows: true
