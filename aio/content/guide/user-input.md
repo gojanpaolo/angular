@@ -10,7 +10,9 @@ Run the <live-example></live-example>.
 
 ## Binding to user input events
 
-You can use [Angular event bindings](guide/template-syntax#event-binding)
+You can use [Angular event bindings](
+
+template-syntax#event-binding)
 to respond to any [DOM event](https://developer.mozilla.org/en-US/docs/Web/Events).
 Many DOM events are triggered by user input. Binding to these events provides a way to
 get input from the user.
@@ -328,5 +330,5 @@ These techniques are useful for small-scale demonstrations, but they
 quickly become verbose and clumsy when handling large amounts of user input.
 Two-way data binding is a more elegant and compact way to move
 values between data entry fields and model properties.
-The next page, `Forms`, explains how to write
+[`Forms`](guide/forms#form-model-setup) explains how to write
 two-way bindings with `NgModel`.
